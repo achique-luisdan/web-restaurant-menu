@@ -1,26 +1,23 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <ContainerPlates msg="Welcome to Your Vue.js App"/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import ContainerPlates from './components/ContainerPlates.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    ContainerPlates
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  @import './assets/css/normalize.css';
+  @import './assets/css/skeleton.css';
+  body {
+    background-color: #363533ff; 
+  }
 </style>
